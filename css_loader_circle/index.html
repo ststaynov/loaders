@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+body {
+  background-color: black;
+}
+svg {
+    transform: rotate(-20deg);
+}
+span {
+  position: absolute;
+  color: white;
+  font-size: 4em;   
+  text-shadow: 1em -1em 9px rgba(225, 20, 98, 0.75), -1em 1em 9px rgba(111, 202, 220, 0.75);
+}
+.loader {
+  position: relative;
+}
+ul {
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  transform: rotate(12deg);
+}
+li {
+  margin: 0;
+  padding: 0;
+  margin-left: 0px;
+  list-style: none;
+  background-color: rgba(255,255,255, 0.7);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  float: left;
+}
+li:before {
+  position: absolute;
+  content: ""; 
+  top: 1px;
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-color: rgba(255,255,255, 0.6);
+  border-radius: 50%;
+  z-index: 10;
+  animation: bubble 1s infinite;
+}
+
+@keyframes bubble {
+  0% {
+    transform: scale(1.5);
+  }
+  25% {
+    transform: scale(1.7);
+  }
+  50% {
+    transform: scale(2);
+  }
+  750% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+/*.loader:before {
+  position: absolute;
+  left: 10px;
+  content: 'F';
+  color: yellow;
+  font-size: 4em;   
+  display: block;
+}
+.loader:after {
+  position: absolute;
+  right: 10px;
+  content: 'F';
+  color: green;
+  font-size: 4em;   
+  display: block;
+}*/
+/*.loader:before {
+  animation: before 2s infinite;
+}
+
+
+@keyframes before {
+  0% {
+    box-shadow: 1em 1em rgba(225, 20, 98, 0.75), -1em -1em rgba(111, 202, 220, 0.75);
+  }
+  25% {
+    box-shadow: -1em 1em rgba(225, 20, 98, 0.75), 1em -1em rgba(111, 202, 220, 0.75);
+  }
+  50% {
+    box-shadow: -1em -1em rgba(225, 20, 98, 0.75), 1em 1em rgba(111, 202, 220, 0.75);
+  }
+  750% {
+    box-shadow: 1em -1em rgba(225, 20, 98, 0.75), -1em 1em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em 1em rgba(225, 20, 98, 0.75), -1em -1em rgba(111, 202, 220, 0.75);
+  }
+}*/
+
+/*
+ * Attempt to center the whole thing!
+ */
+html,
+body {
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+  </head>
+
+  <body>
+    <div class="loader">
+      <svg width="170px" height="166px" viewBox="0 0 170 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+          <!-- Generator: Sketch 3.5.2 (25235) - http://www.bohemiancoding.com/sketch -->
+          <title>Slice 1</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="2" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+              <path d="M1.37890625,2.24338868 L1.37890625,153.0124 C1.37890625,153.0124 1.4609375,165.019531 64.5859375,165.019531 C127.710938,165.019531 125.90625,149.43439 125.90625,149.43439 L125.90625,1" id="Path-1" stroke="#979797" sketch:type="MSShapeGroup"></path>
+              <path d="M126.105469,46.3007812 C126.105469,46.3007812 169.128906,13.0195312 169.128906,52.3007812 C169.128906,91.5820312 141.140625,113.476562 141.140625,113.476562 C141.140625,113.476562 126.800781,125.320314 126.800781,104.332031" id="Path-2" stroke="#979797" sketch:type="MSShapeGroup"></path>
+              <path d="M2.625,56.4882812 L125.898438,135.285156 C125.898438,135.285156 140.6875,169.066406 67.3320312,164.570312 C-6.0234375,160.074219 2.47265625,160.324219 2.47265625,140.835938 C2.47265625,121.347656 2.625,56.4882812 2.625,56.4882812 Z" id="Path-3" stroke="#9B9B9B" fill-opacity="0.4" fill="#D2C73D" sketch:type="MSShapeGroup"></path>
+          </g>
+      </svg>
+    <!-- <span>F</span> -->
+    </div>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    
+    <iframe data-src="https://player.vimeo.com/video/154596628?autoplay=1&amp;loop=1&amp;autopause=1&amp;color=000&amp;title=0&amp;byline=0&amp;portrait=0" width="1920" height="1080" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://player.vimeo.com/video/154596628?autoplay=1&amp;loop=1&amp;autopause=1&amp;color=000&amp;title=0&amp;byline=0&amp;portrait=0"></iframe>
+
+<!--     <iframe src="https://player.vimeo.com/video/154596628?autoplay=1&loop=1&title=0&byline=0&portrait=0" width="1920" height="1079" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+    
+    
+  </body>
+</html>

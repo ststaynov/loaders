@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Single element Slack loader</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      .loader {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+.loader:before {
+  content: '';
+  border: 1pc solid;
+  box-shadow: 1em 1em rgba(225, 20, 98, 0.75), -1em -1em rgba(111, 202, 220, 0.75);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.loader:before {
+  animation: before 2s infinite;
+}
+
+
+@keyframes before {
+  0% {
+    box-shadow: 1em 1em rgba(225, 20, 98, 0.75), -1em -1em rgba(111, 202, 220, 0.75);
+  }
+  25% {
+    box-shadow: -1em 1em rgba(225, 20, 98, 0.75), 1em -1em rgba(111, 202, 220, 0.75);
+  }
+  50% {
+    box-shadow: -1em -1em rgba(225, 20, 98, 0.75), 1em 1em rgba(111, 202, 220, 0.75);
+  }
+  750% {
+    box-shadow: 1em -1em rgba(225, 20, 98, 0.75), -1em 1em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em 1em rgba(225, 20, 98, 0.75), -1em -1em rgba(111, 202, 220, 0.75);
+  }
+}
+
+/*
+ * Attempt to center the whole thing!
+ */
+html,
+body {
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
+}
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <div class="loader"></div>
+    
+    
+    
+    
+    
+  </body>
+</html>
